@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     if (food.length +  animal.length + preLanguage <= 25) {
       $("#output").text(dotNet);
-    } else if (food.length / animal.length * preLanguage >= food.length) {
+    } else if (food.length / animal.length * preLanguage >= food.length * animal.length) {
       $("#output").text(javaScript);
     } else {
       $("#output").text(seeSharp);
