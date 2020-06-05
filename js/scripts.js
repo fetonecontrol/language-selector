@@ -9,9 +9,9 @@ $(document).ready(function() {
     const javaScript = "Java Script"
     const seeSharp = "C#"
 
-    if (food.length + ( animal.length / preLanguage) <= food.length) {
+    if (food.length +  animal.length + preLanguage <= 25) {
       $("#output").text(dotNet);
-    } else if (food.length + animal.length * preLanguage <= food.length) {
+    } else if (food.length / animal.length * preLanguage >= food.length) {
       $("#output").text(javaScript);
     } else {
       $("#output").text(seeSharp);
