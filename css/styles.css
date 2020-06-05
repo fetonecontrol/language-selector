@@ -1,3 +1,6 @@
-#story {
+#output {
   display: none;
+}
+.input-width1 {
+  width; 50%;
 }
