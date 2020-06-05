@@ -13,7 +13,6 @@ $(document).ready(function() {
       $("#output").text(dotNet);
     } else if (food.length / animal.length * preLanguage >= food.length) {
       $("#output").text(javaScript);
-      $("#javaImg").show();
     } else {
       $("#output").text(seeSharp);
     }
