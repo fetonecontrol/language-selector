@@ -30,18 +30,13 @@
             <div class="well">
               <form id="lang-select">
                 <div class="form-group">
-                  <label for="input1">Favorite Food</label>
-                  <input id="input1" class="form-control" type="text">
+                  <label for="food">Favorite Food</label>
+                  <input id="food" class="form-control" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="input2">Favorite Animal</label>
-                  <input id="input2" class="form-control" type="text">
+                  <label for="animal">Favorite Animal</label>
+                  <input id="animal" class="form-control" type="text">
                 </div>
-                <select class="form-control" id="beverage">
-                  <option>C#</option>
-                  <option>.Net</option>
-                  <option>Javascript</option>
-                </select>
                 <div class="form-group">
                   <label for="color">What is your favorite color?</label>
                   <input id="color" class="form-control" type="color">
@@ -50,6 +45,12 @@
                   <label for="born">Date of birth:</label>
                   <input id="born" class="form-control" type="date">
                 </div>
+                <label for="preference">Prefered language</label>
+                <select class="form-control" id="prefence">
+                  <option value="1">C#</option>
+                  <option value="2">.Net</option>
+                  <option value="3">Javascript</option>
+                </select>
                 <button type="submit" class="btn btn-primary">Go!</button>
               </form>
             </div>
@@ -58,9 +59,14 @@
 <!--Begin column 2 with output-->
           <div class="col-md-6">
             <div class="hide-out">
-              <div class="well">
-                <div class="background">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h2 class="panel-title">You should try learning:</h2>
                 </div>
+                <div class="panel body">
+                  <span id="output"></span>
+                </div>
+              </div>
               </div>
             </div>
           </div>
