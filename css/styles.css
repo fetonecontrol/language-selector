@@ -1,6 +1,13 @@
 #hide-out {
   display: none;
 }
-#column2 {
+h1 {
+  font-size: large;
+  text-align: center;
+}
+#col-2-text {
+  text-align: center;
+}
+#col2 {
   background-color: blanchedalmond;
 }
