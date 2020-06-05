@@ -1,63 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Calculator</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Which programing language should you learn?</h1>
-      <form id="language">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="fav-animal">Favorite Animal:</label>
-                <input id="fav-animal" class="form-control" type="text">
-              </div>
-              <div class="form-group">
-                <label for="fav-food">Favorite Food:</label>
-                <input id="fav-food" class="form-control" type="text">
-              </div>
-              <div class="form-group">
-                <label for="fav-food">Favorite Flower:</label>
-                <input id="fav-food" class="form-control" type="text">
-              </div>
-            </div>
-            <div class ="col-md-6">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="operator" value="c-sharp">
-                  C#
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="operator" value="dot-net">
-                  .Net
-                </label>
-              </div>        
-              <div class="radio">
-                <label>
-                  <input type="radio" name="operator" value="js">
-                  Java-Script
-                </label>
-              </div>       
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.4.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>language-selector</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Language Selector</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Fred's github</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">.Net</a></li>
+            <li><a href="#">Javascript</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="well">
+              <form id="lang-select">
+                <div class="form-group">
+                  <label for="input1">Favorite Food</label>
+                  <input id="input1" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="input2">Favorite Animal</label>
+                  <input id="input2" class="form-control" type="text">
+                </div>
+                <select class="form-control" id="beverage">
+                  <label for="preference">Favorite Color</label>
+                  <option>C#</option>
+                  <option>.Net</option>
+                  <option>Javascript</option>
+                </select>
+                <div class="form-group">
+                  <label for="color">What is your favorite color?</label>
+                  <input id="color" class="form-control" type="color">
+                </div>  
+                <div class="form-group">
+                  <label for="born">Date of birth:</label>
+                  <input id="born" class="form-control" type="date">
+                </div>
+                <button type="submit" class="btn btn-primary">Go!</button>
+              </form>
             </div>
           </div>
-          <div class="row">
-            <button type="submit" class="btn btn-primary">Go!</button>
+          <div class="col-md-6">
+            <div class="hide-out">
+              <div class="well">
+                <div class="background">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
-
-      <div id="output">
-
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
