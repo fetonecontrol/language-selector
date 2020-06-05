@@ -9,11 +9,11 @@ $(document).ready(function() {
     const javaScript = "Java Script"
     const seeSharp = "C#"
 
-    if (food.length + animal.length + preLanguage <= 25) {
+    if (food.length + animal.length / preLanguage <= food.length) {
       $("#output").text(dotNet);
-    } else if (food.length + animal.length + preLanguage <= 10000) {
+    } else if (food.length + animal.length * preLanguage >= food.length) {
       $("#output").text(javaScript);
-    } else if (food.length + animal.length + preLanguage === 0) {
+    } else {
       $("#output").text(seeSharp);
     }
     $("#hide-out").show();
